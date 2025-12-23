@@ -3,9 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   LayoutDashboard,
-  Users,
   CalendarDays,
-  BedDouble,
   BarChart3,
   Settings,
   LogOut,
@@ -17,10 +15,8 @@ import nileSunset from "@/assets/nile-sunset.jpg";
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Guests", href: "/dashboard/guests", icon: Users },
-  { name: "Reservations", href: "/dashboard/reservations", icon: CalendarDays },
-  { name: "Rooms", href: "/dashboard/rooms", icon: BedDouble },
-  { name: "Analytics", href: "/dashboard/analytics", icon: BarChart3 },
+  { name: "Bookings", href: "/dashboard/bookings", icon: CalendarDays },
+  { name: "Analytics", href: "/dashboard/analytics", icon: BarChart3, adminOnly: true },
   { name: "Settings", href: "/dashboard/settings", icon: Settings },
 ];
 
